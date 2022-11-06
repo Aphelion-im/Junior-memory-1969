@@ -18,9 +18,7 @@ window.addEventListener('load', () => {
   let timeout;
   let numberOfCardsChosen = 72;
 
-  // Eventlisteners
-  btn_newGame.addEventListener('click', newGame);
-  numberOfCardsSlider.addEventListener('input', numberOfCards);
+  // Init
   newGame();
 
   // HTML template for createBoard():
@@ -71,7 +69,6 @@ window.addEventListener('load', () => {
 
   function turnCard() {
     if (!busy) {
-      console.clear();
       this.classList.add('visible');
       flips++;
       const dataId =
@@ -80,10 +77,9 @@ window.addEventListener('load', () => {
         this.lastElementChild.lastElementChild.getAttribute('data-card');
       const card = this.setAttribute('title', `${dataCard}`);
 
+      // Push the choices into the arrays and compare them
       chosenIds.push(dataId);
-      console.log('chosenIds Array: ' + chosenIds);
       chosenArray.push(dataCard);
-      console.log('chosenArray: ' + chosenArray);
 
       // Show player's choice, not with the standard: choice1,choice2 but like this: choice1 & choice2
       feedback.textContent = chosenArray.join(' & ');
@@ -106,11 +102,11 @@ window.addEventListener('load', () => {
     const choice1 = chosenArray[0];
     const choice2 = chosenArray[1];
 
-    if (choiceId1 == choiceId2) {
+    if (choiceId1 === choiceId2) {
       cards[choiceId1].classList.remove('visible');
       message = 'You chose the same card!';
       displayFeedback(message);
-    } else if (choice1 == choice2) {
+    } else if (choice1 === choice2) {
       cards[choiceId1].removeEventListener('click', turnCard);
       cards[choiceId2].removeEventListener('click', turnCard);
       cards[choiceId1].style.cursor = 'not-allowed';
@@ -173,4 +169,9 @@ window.addEventListener('load', () => {
       cards[i].style.order = randIndex;
     }
   }
+
+  // Eventlisteners
+  btn_newGame.addEventListener('click', newGame);
+
+  numberOfCardsSlider.addEventListener('input', numberOfCards);
 }); // End load eventlistener

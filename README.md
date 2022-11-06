@@ -52,6 +52,3 @@ cardArray.sort(() => 0.5 - Math.random());
 * https://github.com/kubowania/memory-game
 * https://www.w3schools.com/CSSref/css3_pr_backface-visibility.asp 
 
-## To do
-* Global gitignore for _source
-* Fix display message after winning
