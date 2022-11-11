@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 :root {
-  --lightblue: #AEDCE9;
-  --darkerblue: #1891D0;
-  --warning: #F4C925;
+  --lightblue: #aedce9;
+  --darkerblue: #1891d0;
+  --warning: #f4c925;
   --width: 71px;
   --height: 71px;
 }
@@ -52,12 +52,12 @@ button {
   align-items: center;
 }
 
-.choices>span {
+.choices > span {
   font-size: 0.75rem;
   transform: translateY(3px);
 }
 
-.choices input+span {
+.choices input + span {
   font-size: 0.75rem;
   margin-left: 8px;
   transform: translateY(3px);
@@ -129,7 +129,7 @@ button {
 }
 
 .card-front {
-  background-color: #FFBB89;
+  background-color: #ffbb89;
   transform: rotateY(180deg);
 }
 
@@ -148,7 +148,7 @@ button {
 }
 
 /* Range slider number of cards chosen*/
-input[type="range"] {
+input[type='range'] {
   appearance: none;
   -webkit-appearance: none;
   height: 31px;
@@ -157,10 +157,10 @@ input[type="range"] {
   background-color: transparent;
 }
 
-input[type="range"]::before {
+input[type='range']::before {
   background-color: var(--darkerblue);
   border-radius: 50%;
-  content: "";
+  content: '';
   display: block;
   height: 16px;
   -webkit-transform: translate(1px, 7px);
@@ -168,10 +168,10 @@ input[type="range"]::before {
   width: 16px;
 }
 
-input[type="range"]::after {
+input[type='range']::after {
   background-color: var(--darkerblue);
   border-radius: 50%;
-  content: "";
+  content: '';
   display: block;
   height: 16px;
   -webkit-transform: translate(-1px, 7px);
@@ -179,11 +179,11 @@ input[type="range"]::after {
   width: 16px;
 }
 
-input[type="range"]:focus {
+input[type='range']:focus {
   outline: none;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+input[type='range']::-webkit-slider-runnable-track {
   background: var(--darkerblue);
   border-radius: 1px;
   border: 0px solid #000;
@@ -194,7 +194,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type='range']::-webkit-slider-thumb {
   appearance: none;
   -webkit-appearance: none;
   background: var(--darkerblue);
@@ -208,11 +208,11 @@ input[type="range"]::-webkit-slider-thumb {
   width: 24px;
 }
 
-input[type="range"]:focus::-webkit-slider-runnable-track {
+input[type='range']:focus::-webkit-slider-runnable-track {
   background: var(--darkerblue);
 }
 
-input[type="range"]::-moz-range-track {
+input[type='range']::-moz-range-track {
   background: var(--darkerblue);
   border-radius: 1px;
   border: 0px solid #000;
@@ -222,7 +222,7 @@ input[type="range"]::-moz-range-track {
   width: 100%;
 }
 
-input[type="range"]::-moz-range-thumb {
+input[type='range']::-moz-range-thumb {
   background: var(--darkerblue);
   border-radius: 24px;
   border: 1px solid var(--darkerblue);
