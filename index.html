@@ -13,22 +13,23 @@
   <!-- Meyer's Reset -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <!-- Custom stylesheets -->
-  <link rel="stylesheet" href="styles/styles.css?v1.0.2">
+  <link rel="stylesheet" href="styles/styles.css?v1.0.3">
 </head>
 
 <body>
   <div class="info">
     <p class="output">Score: 0</p>
-    <button class="btn_newGame">New Game</button>
+    <button class="btn-new-game">New Game</button>
     <p class="flips">Flips: 0</p>
   </div>
+
   <div class="choices">
-    <span># of Cards</span><input class="numberOfCardsSlider" min="2" max="72" step="2" value="72"
+    <span># of Cards</span><input class="number-of-cards-slider" min="2" max="72" step="2" value="72"
       type="range"><span>72</span>
-    <div class="feedback"></div>
   </div>
+  <div class="feedback"></div>
   <main class="grid"></main>
-  <p class="version">v1.0.2 &copy; 2022</p>
+  <p class="version">v1.1.0 &copy; 2024</p>
   <script src="scripts/script.js"></script>
   <script src="scripts/cards-database-v2.js"></script>
 </body>
