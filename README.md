@@ -1,8 +1,9 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0022f8b2-ae91-48a1-8cda-ed4282edad82/deploy-status)](https://app.netlify.com/sites/junior-memory-1969/deploys)
 # Remake Junior Memory 1969 from Ravensburger
 
 <img src="images/background/background.jpg" alt="drawing" width="200">
 
-Updated: 6-11-2022
+Updated: 13-4-2024
 
 ## Highlights
 * 72 cards (36 pairs)
