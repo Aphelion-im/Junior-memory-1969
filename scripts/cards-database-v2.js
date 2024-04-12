@@ -83,12 +83,12 @@ const cardsArray = [{
   {
     id: 16,
     location: "images/cards/card-front-coconut-200x200.jpg",
-    name: "coconut"
+    name: "Coconut"
   },
   {
     id: 17,
     location: "images/cards/card-front-coconut-200x200.jpg",
-    name: "coconut"
+    name: "Coconut"
   },
   {
     id: 18,
